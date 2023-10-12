@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
+}
+body{
+    background-color: #E6E7FA;
+}
+.logo{
+    width: 80px;
 }
 nav a{
     text-align: center;
@@ -24,9 +32,7 @@ main section{
     height: 725px;
     background-color: #E6E7FA;
 }
-body{
-    background-color: #E6E7FA;
-}
+
 header{
     background-color: #E6E7FA;
 }
