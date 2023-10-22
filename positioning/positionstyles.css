@@ -176,8 +176,8 @@
 } 
 .blue6 {
   
-  width: 400px; 
-  height: 400px; 
+  width: 100%; 
+  height: 100%; 
   background-color: blue; 
   grid-column: 2/6;
   grid-row: 2/6;
