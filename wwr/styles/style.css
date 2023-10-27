@@ -180,9 +180,11 @@ footer{
 footer a{
     color: black;
     text-decoration: none;
+    transition: .4s;
 }
 footer p {
     font-size: 1.2em;
+    transition: .4s;
 }
 footer a:hover{
     color: #3F3F3F;
@@ -192,11 +194,12 @@ footer p a:hover{
     text-decoration: underline;
 }
 footer .social img{
-    padding-top: 15px;
+    border-radius: 10px;
 }
 .icon {
     width: 80px;
     padding-top: 10px;
+    
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
