@@ -102,7 +102,7 @@ main section img {
     width: 100%;
 }
 .card-img:hover{
-    opacity: 0.6s;
+    opacity: 0.6;
     transform: scale(1.1);
 }
 .rivers-card{
