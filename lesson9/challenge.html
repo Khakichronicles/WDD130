@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge 09</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: navy;
+            height: 100px;
+            align-content: center;
+        }
+        .stat {
+            color: white;
+            text-align: center;
+            border-right: 1px gray solid;
+        }
+        .stats div:nth-child(3) {
+            border: none;
+        }
+        .stat p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        .stat1 {
+            font-size: 1.5rem;
+        }
+        .stat2 {
+            font-size: .8rem;
+        }
+        .timming {
+            color: blue;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: none;
+        }
+        .heading {
+            font-weight: bolder;
+            font-size: 40px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <img src="images/w09_ice_img.jpg">
+        <p class="timming">3 weeks ago</p>
+        <p class="heading">Post three</p>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate neque eveniet magnam reiciendis asperiores unde eius distinctio officiis. Ducimus mollitia esse inventore tenetur maxime! Quia, reiciendis aut, ullam perferendis voluptates sit culpa laudantium dolore similique recusandae molestias! Fuga tempore aut voluptas tenetur vitae, ducimus ut, harum debitis, nam numquam pariatur.</p>
+        <div class="stats">
+            <div class="stat">
+                <p class="stat1">5<sup>m</sup></p>
+                <p class="stat2">VIEWS</p>
+            </div>
+            <div class="stat">
+                <p class="stat1">2023</p>
+                <p class="stat2">VIEWS</p>
+            </div>
+            <div class="stat">
+                <p class="stat1">15</p>
+                <p class="stat2">COMMENTS</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
