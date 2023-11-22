@@ -1,0 +1,30 @@
+.container{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+}
+
+.title_image{
+    width: 1000px;
+    margin-bottom: 0px;
+}
+.desk{
+    width: 200px;
+    margin: 50px ;
+    margin-left: 75px;
+    border-radius:150px;
+    border: 10px solid darkgray;
+}
+.graphic{
+    width: 200px;
+    margin: 50px;
+    border-radius:150px;
+    border: 10px solid darkgray;
+}
+.person{
+    width: 200px;
+    margin: 50px ;
+    border-radius:150px;
+    border: 10px solid darkgray;
+}
