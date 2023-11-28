@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian component</title>
+    <link rel="stylesheet" href="component.css">
+</head>
+
+<body>
+    <h1>Famous texts</h1>
+    <h2> <i>From famous "people" and "movies"</i></h2>
+    <button class="accordion">Qoutes</button>
+    <div class="panel">
+        <p>The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela</p>
+        <p>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living
+            with the results of other people's thinking. -Steve Jobs</p>
+        <p>If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James
+            Cameron</p>
+    </div>
+
+    <button class="accordion">Poems</button>
+    <div class="panel">
+        <h4>Langston Hughes, “Harlem”</h4>
+        <p>What happens to a dream deferred?<br>
+    
+            Does it dry up <br>
+            like a raisin in the sun? <br>
+            <br>
+            Or fester like a sore— <br>
+            And then run? <br>
+            <br>
+            Does it stink like rotten meat? <br>
+            <br>
+            Or crust and sugar over— <br>
+            like a syrupy sweet? <br>
+            <br>
+            Maybe it just sags <br>
+            like a heavy load. <br>
+    
+            Or does it explode?
+        </p>
+        <h4>The Red Wheelbarrow BY WILLIAM CARLOS WILLIAMS</h4>
+        <p>
+            so much depends<br>
+            upon<br>
+            <br>
+            a red wheel<br>
+            barrow<br>
+            <br>
+            glazed with rain<br>
+            water<br>
+            <br>
+            beside the white<br>
+            chickens<br>
+        </p>
+    </div>
+
+    <button class="accordion">Movie Quotes</button>
+    <div class="panel">
+        <p>Hasta la vista baby</p>
+        <h4>"TERMINATOR 2: JUDGEMENT DAY"</h4>
+        <br>
+        <p>As God as my witness, I'll never be hungry again</p>
+        <h4>"Gone with the Wind"</h4>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
