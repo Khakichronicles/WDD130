@@ -1,0 +1,75 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+  }
+.grid > div {
+    background: #EDE7F6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+/* body {
+    margin: 2rem;
+    font: 12px system-ui;
+} */
+
+.container {
+  padding: 20px;
+  align-content: space-evenly;
+  
+}
+
+.box1, .box2, .box3, .box4 {
+  border: 1px solid black;
+  width: 400px;
+  height: auto;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.box1 {
+  text-align: left;
+}
+
+.box2 {
+  text-align: center;
+  margin-left: 25%;
+
+}
+
+.box3 {
+  text-align: right;
+  margin-left: 50%;
+}
+
+.box4 {
+  text-align: center;
+  margin-left: 20%;
+  
+}
+
+.container p {
+  margin: 0;
+}
+
+.box1 p:first-child,
+.box2 p:first-child,
+.box3 p:first-child,
+.box4 p:nth-child(3) {
+  text-align: left;
+}
+
+.box1 p:nth-child(3),
+.box2 p:nth-child(2),
+.box3 p:nth-child(2),
+.box4 p:nth-child(2) {
+    text-align: center;
+}
+
+.box1 p:nth-child(4),
+.box2 p:nth-child(3),
+.box3 p:nth-child(3),
+.box4 p:first-child
+ {
+    text-align: right;
+}
