@@ -2,16 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
+:root {
+    --heading-font: 'Montserrat Regular', 'Playpen Sans', cursive
+}
+
+
 * {
     margin: 0;
 }
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat Light','Quicksand', sans-serif;
     background-color: #0D1321;
     color: #F4F4F4;
     line-height: 1.6;
 }
 
+/* Homepage styles */
 /* header styles */
 header {
     display: grid;
@@ -19,12 +25,10 @@ header {
     background-color: rgba(239, 234, 215, 0.493);
     padding: 0 30px;
 }
-
 .logo img{
     width: 60px;
     grid-column: 1/2;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -40,6 +44,7 @@ nav a:hover {
     background-color: #0D1321;    
 }
 
+
 /* introduction styles */
 .intro {
     display: grid;
@@ -49,13 +54,13 @@ nav a:hover {
 }
 .intro img {
     width: 100%;
-    margin-top: -240px;
+    margin-top: -140px;
     grid-column: 1/4;
     grid-row: 1/5;
     z-index: -1;
 }
 .intro h2 {
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--heading-font);
     font-size: 60px;
     text-align: center;
     grid-column: 1/4;
@@ -71,6 +76,7 @@ nav a:hover {
     padding: 2px;   
 }
 
+
 /* featured projects */
 .featured-projects {
     background-color: #1C1F33;
@@ -78,13 +84,14 @@ nav a:hover {
     padding: 20px;
 }
 .featured-projects h2{
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--heading-font);
     margin: 10px;
     text-align: center;
 }
 .featured-projects ul {
     list-style: none;
 }
+
 
 /* about us */
 .aboutus {
@@ -96,7 +103,7 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .aboutus h2 {
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--heading-font);
     grid-column: 2/3;
     text-align: center;
     margin-bottom: 10px;
@@ -126,13 +133,14 @@ nav a:hover {
     margin-top: 40px;
 }
 .services h2 {
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--heading-font);
     text-align: center;
 }
 .services ul li a {
     text-decoration: none;
     color: #F0EBD8;
 }
+
 
 /* testimonials styles */
 .testimonials {
@@ -144,7 +152,7 @@ nav a:hover {
     justify-items: center;
 }
 .testimonials h2 {
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--heading-font);
     grid-column: 1/4;
     padding-bottom: 10px;
 }
@@ -161,16 +169,19 @@ nav a:hover {
     grid-row: 4/5;
 }
 
+
 /* contact us styles */
 .contactus {
+    text-align: center;
     background-color: #1C1F33;
     border-radius: 10px;
     padding: 20px;
     margin-top: 40px;
 }
 .contactus h2 {
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--heading-font);
 }
+
 
 /* Newsletter Styles */
 .newsletter {
@@ -181,13 +192,14 @@ nav a:hover {
     text-align: center;
 }
 .newsletter h2 {
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--heading-font);
     margin-bottom: 20px;
     color: #F0EBD8;
 }
 .newsletter p {
     color: #F0EBD8;
 }
+/* Also apply to the form in the services page */
 form {
     display: flex;
     flex-direction: column;
@@ -198,7 +210,7 @@ label {
     margin-bottom: 10px;
     color: #F0EBD8;
 }
-input[type="email"] {
+input[type="email"], input[type="text"] {
     width: 30%;
     padding: 10px;
     margin-bottom: 15px;
@@ -221,6 +233,85 @@ button:hover {
 }
 
 
+/* Services styles */
+.services-provided {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.services-provided img {
+    margin-top: -110px;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    z-index: -1;
+}
+.services-provided h2 {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1; 
+    font-size: 60px;
+    font-style: italic;
+    font-family: var(--heading-font);
+}
+#services-contents {
+    grid-column: 1/4;
+    grid-row: 2;
+    border-radius: 10px;
+    padding: 4em 20em;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 2;
+}
+#services-contents h3 {
+    font-style: italic;
+    padding: 10px 0;
+}
+#services-contents p {
+    font-style: italic;
+    padding: 10px 0;
+}
+/* Booking and inqury Form styles */
+.booking {
+    background-color: #1C1F33;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+.booking select {
+    width: 15%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #F0EBD8;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #F0EBD8;
+    font-style: italic;
+}
+.booking select option {
+    color: #0D1321;
+    background-color: rgba(239, 234, 215, 0.1)
+}
+
+.faq {
+    background-color: #1C1F33;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+.faq dl dt {
+    text-align: left;
+}
+.faq dl dd {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+
+}
+
 
 /* footer styles */
 footer{
@@ -234,6 +325,22 @@ footer{
     font-size: 14px;
 }
 
+.footer-bottom {
+    display: flex;
+}
+.footer-bottom p {
+    font-size: small;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #F2994A;
+    margin-left: 20px;
+    transition: all .3s ease 0s;
+}
+.footer-bottom a:hover {
+    color: #e06022;
+    font-style: italic;
+}
 .social-icons a {
     text-decoration: none;
     padding: 10px;
