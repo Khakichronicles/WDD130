@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
 :root {
-    --heading-font: 'Montserrat Regular', 'Playpen Sans', cursive
+    --heading-font:'Playpen Sans', cursive
 }
 
 
@@ -11,7 +10,7 @@
     margin: 0;
 }
 body {
-    font-family: 'Montserrat Light','Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #0D1321;
     color: #F4F4F4;
     line-height: 1.6;
@@ -41,7 +40,7 @@ nav a {
 }
 nav a:hover {
     color: #F0EBD8;
-    background-color: #0D1321;    
+    background-color: #0D1321;
 }
 
 
@@ -50,7 +49,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
+
 }
 .intro img {
     width: 100%;
@@ -73,7 +72,7 @@ nav a:hover {
     grid-row: 4/5;
     color: #F0EBD8;
     align-content: center;
-    padding: 2px;   
+    padding: 2px;
 }
 
 
@@ -115,7 +114,7 @@ nav a:hover {
 
 }
 .aboutus figure img {
-    
+
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 .aboutus p {
@@ -198,20 +197,24 @@ nav a:hover {
 }
 .newsletter p {
     color: #F0EBD8;
+    margin-bottom: 10px;
 }
-/* Also apply to the form in the services page */
+
+/* Also apply for the form in services page */
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
 }
 label {
-    display: block;
+    grid-column: 2/3;
+    text-align: right;
+    padding-right: 10px;
     margin-bottom: 10px;
     color: #F0EBD8;
 }
 input[type="email"], input[type="text"] {
-    width: 30%;
+    grid-column: 3/4;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #F0EBD8;
@@ -220,9 +223,12 @@ input[type="email"], input[type="text"] {
     color: #F0EBD8;
 }
 button {
+    grid-column: 3/4;
     padding: 10px 20px;
+    justify-self: center;
     border: none;
     border-radius: 5px;
+    width: 50%;
     background-color: #F2994A;
     color: #F0EBD8;
     cursor: pointer;
@@ -232,7 +238,7 @@ button:hover {
     background-color: #e06022;
 }
 
-
+/* Sevices page styles */
 /* Services styles */
 .services-provided {
     display: grid;
@@ -249,7 +255,7 @@ button:hover {
 .services-provided h2 {
     text-align: center;
     grid-column: 1/4;
-    grid-row: 1; 
+    grid-row: 1;
     font-size: 60px;
     font-style: italic;
     font-family: var(--heading-font);
@@ -280,7 +286,7 @@ button:hover {
     text-align: center;
 }
 .booking select {
-    width: 15%;
+    grid-column: 3/4;
     padding: 5px;
     margin-bottom: 15px;
     border: 1px solid #F0EBD8;
@@ -290,10 +296,12 @@ button:hover {
     font-style: italic;
 }
 .booking select option {
+    text-align: center;
     color: #0D1321;
     background-color: rgba(239, 234, 215, 0.1)
 }
 
+/* FAQ styles */
 .faq {
     background-color: #1C1F33;
     border-radius: 10px;
@@ -312,6 +320,95 @@ button:hover {
 
 }
 
+
+/* Sound Gallery page styles */
+.project-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.project-showcase img {
+    margin-top: -110px;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    z-index: -1;
+}
+.project-showcase h2 {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1;
+    font-size: 60px;
+    font-style: italic;
+    font-family: var(--heading-font);
+}
+.project-showcase p {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2;
+    margin: 10px 0 10px 0;
+}
+.project-showcase article h3{
+    text-align: center;
+}
+.project-showcase article p{
+    text-align: left;
+    padding-left: 25%;
+    text-decoration: none;
+}
+.project-showcase article p a{
+    text-decoration: none;
+    color: #F0EBD8;
+}
+#article-1 {
+    grid-column: 1/2;
+    grid-row: 3;
+    padding: 20px;
+    margin-top: 40px;
+}
+#article-2 {
+    grid-column: 2/3;
+    grid-row: 3;
+    padding: 20px;
+    margin-top: 40px;
+}
+#article-3 {
+    grid-column: 2/3;
+    grid-row: 3;
+    padding: 20px;
+    margin-top: 40px;
+}
+.success-stories{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #1C1F33;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+.success-stories h2 {
+    grid-column: 1/6;
+}
+.success-stories p {
+    grid-column: 2/5;
+    margin: 10px 0 10px 0;
+}
+.success-stories article {
+    grid-column: 2/5;
+    margin: 10px 0 10px 0;
+}
+
+.behind-the-scenes {
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgba(28, 31, 48, 0.712);
+}
+.behind-the-scenes p a {
+    text-decoration: none;
+    color: #F0EBD8;
+}
 
 /* footer styles */
 footer{
@@ -344,7 +441,7 @@ footer{
 .social-icons a {
     text-decoration: none;
     padding: 10px;
-    
+
 }
 .social-icons a i {
     transition: all .3s ease 0s;
@@ -355,7 +452,7 @@ footer{
 
 @media (max-width: 700px) {
     footer, header{
-        flex-direction: column; 
+        flex-direction: column;
     }
     .footer-bottom, .social-icons{
         text-align: center;
