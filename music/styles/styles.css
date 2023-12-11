@@ -21,7 +21,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 0.25fr auto;
-    background-color: rgba(239, 234, 215, 0.493);
+    background-color: rgba(239, 234, 215, 0.495);
     padding: 0 30px;
 }
 .logo img{
