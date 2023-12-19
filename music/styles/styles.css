@@ -27,6 +27,12 @@ header {
 .logo img{
     width: 60px;
     grid-column: 1/2;
+    transform: scale(1);
+    transition: .3s ease;
+}
+.logo img:hover{
+    translate: 0 5px;
+    transform: scale(1.1);
 }
 nav {
     display: flex;
@@ -373,7 +379,7 @@ button:hover {
     margin-top: 40px;
 }
 #article-3 {
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 3;
     padding: 20px;
     margin-top: 40px;
@@ -445,9 +451,13 @@ footer{
 }
 .social-icons a i {
     transition: all .3s ease 0s;
+    transform: scale(1);
+    transition: transform all .3s ease 0s;
 }
 .social-icons a i:hover {
     color: #F0EBD8;
+    transform: scale(2);
+    
 }
 
 @media (max-width: 700px) {
